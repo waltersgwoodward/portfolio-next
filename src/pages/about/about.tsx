@@ -17,62 +17,29 @@ const About = () => {
       )}
     >
       <div className="p-[10px] text-md">
-        My career as a software developer started out in web development,
-        primarily as a native JavaScript developer. Currently, I enjoy working
-        on a daily basis with TypeScript, React, NestJS, TailwindCSS, GraphQL,
-        and PostgreSQL. Outside of programming languages and tools, day to day,
-        I work within a modified Agile Scrum environment as an individual
-        contributor at Enerflo. We have daily standups and use git and Github
-        for version control. On any given day I might be researching different
-        solutions to a project still in the works, coding out a pull request to
-        address bugs / build new features requested through our support team,
-        writing tests (we use Jest and Cypress), or reviewing pull requests
-        submitted by my co-workers. Much of the code that I write centers around
-        building and integrating with API&apos;s in order to streamline and
-        standardize the entire solar deal process.
+        Below is my attempt at an introduction to who I am as a professional and
+        as a person. If you would prefer a copy of my resume, please see my
+        LinkedIn profile here.
       </div>
-      <div className="p-[10px] text-start text-md">
-        <Text>My strengths include:</Text>
-        <br />
-        <List>
-          <ListItem>
-            <FontAwesomeIcon
-              icon={faCheckCircle}
-              className="text-blue-300 pr-2"
-            />
-            The ability to quickly adapt in a changing / fast paced environment
-          </ListItem>
-          <ListItem>
-            <FontAwesomeIcon
-              icon={faCheckCircle}
-              className="text-blue-300 pr-2"
-            />
-            Maintaining open communication with all members of my team
-          </ListItem>
-          <ListItem>
-            <FontAwesomeIcon
-              icon={faCheckCircle}
-              className="text-blue-300 pr-2"
-            />
-            A strong aptitude for analytical thinking / problem solving
-          </ListItem>
-          <ListItem>
-            <FontAwesomeIcon
-              icon={faCheckCircle}
-              className="text-blue-300 pr-2"
-            />
-            Being honest and acting with integrity
-          </ListItem>
-        </List>
-        <br />
-        <Text>
-          On a personal level, I am motivated by my faith to follow the example
-          of Christ - to live sacrificially, to love abundantly, to work
-          &apos;as unto the Lord&apos;. I am a husband, a father, and a
-          homeowner - so, outside of work, most of my time is dedicated to my
-          family, working on home improvement projects, or contributing in
-          various ways to our local church.
-        </Text>
+      <div className="p-[10px] text-md">
+        [INSERT PICTURE OF OREGON / home] I live out in the woods here in Oregon
+        City, OR. I spent most of my education focused on three areas (music,
+        sustainable farming, and christian theology) until I got engaged in 2017
+        and decided to pursue a career that could support my desire to someday
+        buy a house and raise a family. I was always been drawn to computers and
+        automation. Becoming a software developer has allowed me to continue to
+        explore and develop the art of programming.{" "}
+      </div>
+      <div className="p-[10px] text-md">
+        [Logos from past companies] While I do not have specific metrics to
+        offer, in the five years that I have had the privilege of working in
+        this industry, I have worked on many projects at the enterprise level
+        with world wide reach and high profits.{" "}
+      </div>
+      <div className="p-[10px] text-md">
+        [Logo from Enerflo] I currently am employed at a company called Enerflo,
+        which is a solar platform that primarily serves the residential sector
+        of solar sales.
       </div>
     </div>
   );

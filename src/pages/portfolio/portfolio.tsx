@@ -36,20 +36,16 @@ const Portfolio = () => {
           />
           <Stack pt="6" spacing="3">
             <Heading size="md" className={alegreya.className}>
-              Nine Acre Photography
+              TODO: HEADING
             </Heading>
-            <Text>
-              Sam Williams is a long time friend of mine who founded Nine Acre
-              Photography. Early on, Sam asked me to build him a website to
-              display his work.
-            </Text>
+            <Text>TODO: DESCRIPTION</Text>
           </Stack>
         </CardBody>
         <Divider />
         <CardFooter>
           <ButtonGroup spacing="2">
             <Link
-              href="https://nineacrephotography.com/"
+              href="https://google.com/"
               aria-label="Click here to view Walter's Contact form"
             >
               <Button variant="link" colorScheme="blue">
