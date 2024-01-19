@@ -13,7 +13,7 @@ const Home = ({
   jobTitle = "Senior Full Stack Software Developer",
 }: HomeProps) => {
   return (
-    <Page className="justify-center items-center pb-16 font-alegreya">
+    <Page className="justify-center items-center pb-16 font-alegreya" title="Home">
       <div className="p-[10px] text-center text-6xl">{name}</div>
       <div className="p-[10px] text-center text-2xl">{jobTitle}</div>
       <div

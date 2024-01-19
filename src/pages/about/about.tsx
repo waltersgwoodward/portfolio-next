@@ -5,6 +5,7 @@ const About = () => {
     <Page
       header="About"
       className="items-center pb-16 font-alegreya pt-[60px] px-10"
+      title="About"
     >
       <div className="p-[10px] text-md">
         Hi there! My name is Walter Woodward and this is my portfolio website. I

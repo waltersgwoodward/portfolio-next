@@ -16,7 +16,7 @@ import Page from "@/components/page";
 
 const Portfolio = () => {
   return (
-    <Page className="justify-center items-center pb-16 font-alegreya pt-[50px]">
+    <Page className="justify-center items-center pb-16 font-alegreya pt-[50px]" title="Portfolio">
       <Card maxW="sm">
         <CardBody>
           <Image

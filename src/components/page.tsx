@@ -2,14 +2,16 @@ import clsx from "clsx";
 import { Divider, Heading, useColorModeValue } from "@chakra-ui/react";
 import { alegreya } from "@/styles/fonts";
 import { ReactNode } from "react";
+import Head from "next/head";
 
 export type PageProps = {
   children: ReactNode;
+  title: string;
   header?: string;
   className?: string;
 };
 
-const Page = ({ children, header, className }: PageProps) => {
+const Page = ({ children, header, className, title }: PageProps) => {
   return (
     <div
       className={clsx(
@@ -22,6 +24,9 @@ const Page = ({ children, header, className }: PageProps) => {
         className ?? ""
       )}
     >
+      <Head>
+        <title>{title}</title>
+      </Head>
       {header && (
         <>
           <Heading
