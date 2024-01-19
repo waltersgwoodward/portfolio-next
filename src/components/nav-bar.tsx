@@ -7,15 +7,7 @@ import {
   MenuList,
   useColorMode,
 } from "@chakra-ui/react";
-import {
-  AddIcon,
-  EditIcon,
-  ExternalLinkIcon,
-  HamburgerIcon,
-  MoonIcon,
-  RepeatIcon,
-  SunIcon,
-} from "@chakra-ui/icons";
+import { HamburgerIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

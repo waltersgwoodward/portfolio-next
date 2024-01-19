@@ -30,26 +30,29 @@ const Portfolio = () => {
       <Card maxW="sm">
         <CardBody>
           <Image
-            src="/portfolio/sam-williams.jpg"
+            src="/portfolio/walkin-pets-logo.jpeg"
             alt="Green double couch with wooden legs"
             borderRadius="lg"
           />
           <Stack pt="6" spacing="3">
             <Heading size="md" className={alegreya.className}>
-              TODO: HEADING
+              SureFit Calculator
             </Heading>
-            <Text>TODO: DESCRIPTION</Text>
+            <Text>
+              An embedded javascript application that calculates the correct
+              wheelchair size for your pet
+            </Text>
           </Stack>
         </CardBody>
         <Divider />
         <CardFooter>
           <ButtonGroup spacing="2">
             <Link
-              href="https://google.com/"
+              href="https://www.handicappedpets.com/wheelchair-sizer/"
               aria-label="Click here to view Walter's Contact form"
             >
               <Button variant="link" colorScheme="blue">
-                Visit Website
+                Try the SureFit Calculator!
               </Button>
             </Link>
           </ButtonGroup>

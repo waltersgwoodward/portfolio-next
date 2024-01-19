@@ -21,8 +21,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faUser } from "@fortawesome/free-solid-svg-icons";
-import clsx from "clsx";
-import { alegreya } from "@/styles/fonts";
+import Page from "@/components/page";
 init("UUDb2VVym6bRHm5QH");
 
 export type ContactFormProps = {};
@@ -39,7 +38,7 @@ export default function ContactForm({}: ContactFormProps) {
 
     toast.promise(
       emailjs.sendForm(
-        "service_qt25ufu",
+        "service_rhvp7jd",
         "template_6wb8xsv",
         e.target,
         "UUDb2VVym6bRHm5QH"
@@ -53,17 +52,8 @@ export default function ContactForm({}: ContactFormProps) {
   };
 
   return (
-    <div
-      className={clsx(
-        alegreya.className,
-        "min-h-screen bg-gradient-to-r flex flex-col justify-center items-center",
-        useColorModeValue(
-          "gray.200 p-[10px] from-rose-100 to-teal-100",
-          "gray.700 p-[10px] from-gray-700 via-gray-900 to-black bg-cover w-full h-full"
-        )
-      )}
-    >
-      <VStack spacing={{ base: 4, md: 8 }}>
+    <Page className="justify-center items-center">
+      <VStack spacing={{ base: 4, md: 8 }} className="pt-[20px]">
         <Stack
           spacing={{ base: 4, md: 8, lg: 20 }}
           direction={{ base: "column", md: "row" }}
@@ -86,7 +76,7 @@ export default function ContactForm({}: ContactFormProps) {
                 icon={<FontAwesomeIcon icon={faEnvelope} />}
                 onClick={onCopy}
                 isRound
-                colorScheme="blue"
+                colorScheme={useColorModeValue("black", "gray")}
               />
             </Tooltip>
 
@@ -98,7 +88,7 @@ export default function ContactForm({}: ContactFormProps) {
                 fontSize="3xl"
                 icon={<FontAwesomeIcon icon={faGithub} />}
                 isRound
-                colorScheme="blue"
+                colorScheme={useColorModeValue("black", "gray")}
               />
             </Link>
 
@@ -109,7 +99,7 @@ export default function ContactForm({}: ContactFormProps) {
                 size="lg"
                 icon={<FontAwesomeIcon icon={faLinkedin} />}
                 isRound
-                colorScheme="blue"
+                colorScheme={useColorModeValue("black", "gray")}
               />
             </Link>
           </Stack>
@@ -156,7 +146,11 @@ export default function ContactForm({}: ContactFormProps) {
                   />
                 </FormControl>
 
-                <Button width="full" type="submit" colorScheme="blue">
+                <Button
+                  width="full"
+                  type="submit"
+                  colorScheme={useColorModeValue("teal", "gray")}
+                >
                   Send Message
                 </Button>
               </VStack>
@@ -164,6 +158,6 @@ export default function ContactForm({}: ContactFormProps) {
           </form>
         </Stack>
       </VStack>
-    </div>
+    </Page>
   );
 }

@@ -1,7 +1,6 @@
 import { Link } from "@chakra-ui/next-js";
 import clsx from "clsx";
 import { Button, useColorModeValue } from "@chakra-ui/react";
-import { alegreya } from "@/styles/fonts";
 
 type HomeProps = {
   name?: string;
@@ -15,7 +14,6 @@ const Home = ({
   return (
     <div
       className={clsx(
-        alegreya.className,
         "min-h-screen bg-gradient-to-r flex flex-col justify-center items-center pb-16 font-alegreya",
         useColorModeValue(
           "gray.200 p-[10px] from-rose-100 to-teal-100",
