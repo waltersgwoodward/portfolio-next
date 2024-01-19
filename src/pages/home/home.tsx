@@ -1,6 +1,7 @@
 import { Link } from "@chakra-ui/next-js";
 import clsx from "clsx";
 import { Button, useColorModeValue } from "@chakra-ui/react";
+import Page from "@/components/page";
 
 type HomeProps = {
   name?: string;
@@ -12,15 +13,7 @@ const Home = ({
   jobTitle = "Senior Full Stack Software Developer",
 }: HomeProps) => {
   return (
-    <div
-      className={clsx(
-        "min-h-screen bg-gradient-to-r flex flex-col justify-center items-center pb-16 font-alegreya",
-        useColorModeValue(
-          "gray.200 p-[10px] from-rose-100 to-teal-100",
-          "gray.700 p-[10px] from-gray-700 via-gray-900 to-black bg-cover w-full h-full"
-        )
-      )}
-    >
+    <Page className="justify-center items-center pb-16 font-alegreya">
       <div className="p-[10px] text-center text-6xl">{name}</div>
       <div className="p-[10px] text-center text-2xl">{jobTitle}</div>
       <div
@@ -57,7 +50,7 @@ const Home = ({
           </Link>
         </div>
       </div>
-    </div>
+    </Page>
   );
 };
 
