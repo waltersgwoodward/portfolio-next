@@ -16,7 +16,16 @@ import Page from "@/components/page";
 
 const Portfolio = () => {
   return (
-    <Page className="justify-center items-center pb-16 font-alegreya pt-[50px]" title="Portfolio">
+    <Page
+      className="items-center pb-16 font-alegreya pt-[50px]"
+      title="Portfolio"
+    >
+      <div className="p-[10px] text-md pb-[20px]">
+        Unfortunately since most of the projects I have worked on have been for
+        proprietary products, the only example I currently have of my work dates
+        back to the beginning of my journey with HandicappedPets and the SureFit
+        Calculator.
+      </div>
       <Card maxW="sm">
         <CardBody>
           <Image

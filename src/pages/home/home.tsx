@@ -3,19 +3,11 @@ import clsx from "clsx";
 import { Button, useColorModeValue } from "@chakra-ui/react";
 import Page from "@/components/page";
 
-type HomeProps = {
-  name?: string;
-  jobTitle?: string;
-};
-
-const Home = ({
-  name = "Walter Woodward",
-  jobTitle = "Senior Full Stack Software Developer",
-}: HomeProps) => {
+const Home = () => {
   return (
     <Page className="justify-center items-center pb-16 font-alegreya" title="Home">
-      <div className="p-[10px] text-center text-6xl">{name}</div>
-      <div className="p-[10px] text-center text-2xl">{jobTitle}</div>
+      <div className="p-[10px] text-center text-6xl">Walter Woodward</div>
+      <div className="p-[10px] text-center text-2xl">Senior Full Stack Software Developer</div>
       <div
         className={clsx(
           "flex justify-between",
