@@ -18,6 +18,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import clsx from "clsx";
+import { alegreya } from "@/styles/fonts";
 
 export default function Nav() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -31,7 +32,7 @@ export default function Nav() {
             icon={<HamburgerIcon />}
             variant="ghost"
           />
-          <MenuList>
+          <MenuList className={alegreya.className}>
             <MenuItem icon={<FontAwesomeIcon icon={faHome} />} as="a" href="/">
               Home
             </MenuItem>

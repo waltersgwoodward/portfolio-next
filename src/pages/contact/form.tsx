@@ -52,8 +52,8 @@ export default function ContactForm({}: ContactFormProps) {
   };
 
   return (
-    <Page className="justify-center items-center" title="Contact">
-      <VStack spacing={{ base: 4, md: 8 }} className="pt-[20px]">
+    <Page className="sm:justify-center items-center" title="Contact">
+      <VStack spacing={{ base: 4, md: 8 }} className="pt-[50px] sm:pt-[20px]">
         <Stack
           spacing={{ base: 4, md: 8, lg: 20 }}
           direction={{ base: "column", md: "row" }}
