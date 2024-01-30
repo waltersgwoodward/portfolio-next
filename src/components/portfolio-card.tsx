@@ -6,18 +6,16 @@ import {
   CardFooter,
   Divider,
   Heading,
-  Image,
   Stack,
   Text,
 } from "@chakra-ui/react";
 import { alegreya } from "@/styles/fonts";
 import Link from "next/link";
+import Image, { StaticImageData } from "next/image";
 
 type PortfolioCardProps = {
-  image: {
-    src: string;
-    alt: string;
-  };
+  image: StaticImageData;
+  imageAlt: string;
   heading: string;
   description: string;
   link: {
@@ -26,8 +24,10 @@ type PortfolioCardProps = {
     aria: string;
   };
 };
+
 const PortfolioCard = ({
   image,
+  imageAlt,
   heading,
   description,
   link,
@@ -35,7 +35,15 @@ const PortfolioCard = ({
   return (
     <Card maxW="sm" marginX="10px">
       <CardBody>
-        <Image src={image.src} alt={image.alt} borderRadius="lg"/>
+        <div className="flex justify-center">
+          <Image
+            src={image}
+            alt={imageAlt}
+            width={300}
+            height={300}
+            placeholder="blur"
+          />
+        </div>
         <Stack pt="6" spacing="3">
           <Heading size="md" className={alegreya.className}>
             {heading}

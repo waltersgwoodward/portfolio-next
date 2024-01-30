@@ -1,12 +1,10 @@
 import Page from "@/components/page";
 import PortfolioCard from "@/components/portfolio-card";
+import WalkInPetsLogo from "./walkin-pets-logo.png";
 
 const projectData = [
   {
-    image: {
-      src: "/portfolio/walkin-pets-logo.png",
-      alt: "Walkin Pets Company Logo",
-    },
+    image: { alt: "Walkin Pets Company Logo" },
     heading: "SureFit Calculator",
     description:
       "An embedded javascript application that calculates the correct wheelchair size for your pet",
@@ -37,7 +35,8 @@ const Portfolio = () => (
         return (
           <PortfolioCard
             key={index}
-            image={card.image}
+            imageAlt={image.alt}
+            image={WalkInPetsLogo}
             link={link}
             heading={heading}
             description={description}
