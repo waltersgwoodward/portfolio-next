@@ -14,8 +14,7 @@ import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 
 type PortfolioCardProps = {
-  image: StaticImageData;
-  imageAlt: string;
+  image: { alt: string; data: StaticImageData };
   heading: string;
   description: string;
   link: {
@@ -27,20 +26,22 @@ type PortfolioCardProps = {
 
 const PortfolioCard = ({
   image,
-  imageAlt,
   heading,
   description,
   link,
 }: PortfolioCardProps) => {
+  const { alt, data } = image || {};
+
   return (
     <Card maxW="sm" marginX="10px">
       <CardBody>
         <div className="flex justify-center">
           <Image
-            src={image}
-            alt={imageAlt}
+            src={data}
+            alt={alt}
             width={300}
             height={300}
+            className="rounded-md"
             placeholder="blur"
           />
         </div>
