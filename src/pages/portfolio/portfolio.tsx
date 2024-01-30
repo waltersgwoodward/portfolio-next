@@ -31,6 +31,21 @@ const projectData: ProjectData = [
   },
 ];
 
+const renderedPortfolioCards = 
+  projectData.map((card, index) => {
+    const { image, heading, description, link } = card || {};
+
+    return (
+      <PortfolioCard
+        key={index}
+        image={image}
+        link={link}
+        heading={heading}
+        description={description}
+      ></PortfolioCard>
+    );
+  });
+
 const Portfolio = () => (
   <Page
     className="items-center pb-16 font-alegreya pt-[50px]"
@@ -44,19 +59,7 @@ const Portfolio = () => (
     </div>
 
     <div className="flex justify-between">
-      {projectData.map((card, index) => {
-        const { image, heading, description, link } = card || {};
-
-        return (
-          <PortfolioCard
-            key={index}
-            image={image}
-            link={link}
-            heading={heading}
-            description={description}
-          ></PortfolioCard>
-        );
-      })}
+      {renderedPortfolioCards}
     </div>
   </Page>
 );
