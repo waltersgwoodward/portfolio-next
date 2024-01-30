@@ -12,7 +12,6 @@ import {
 } from "@chakra-ui/react";
 import { alegreya } from "@/styles/fonts";
 import Link from "next/link";
-import Page from "@/components/page";
 
 type PortfolioCardProps = {
   image: {
