@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { StaticImageData } from 'next/image';
 import WalkInPetsLogo from "./walkin-pets-logo.png";
-import SamWilliams from "./sam-williams.jpg";
+import SamWilliams from "./sam-williams.jpeg";
 
 export type ProjectData = {
     image: {
