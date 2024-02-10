@@ -14,7 +14,7 @@ import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 
 type PortfolioCardProps = {
-  image: { alt: string; data: StaticImageData };
+  image: { alt: string; data: any };
   heading: string;
   description: string;
   link: {
@@ -33,16 +33,16 @@ const PortfolioCard = ({
   const { alt, data } = image || {};
 
   return (
-    <Card maxW="sm" marginX="10px">
+    <Card maxW="xs" marginX="10px" className="mb-5 sm:mb-0">
       <CardBody>
         <div className="flex justify-center">
           <Image
             src={data}
             alt={alt}
-            width={300}
-            height={300}
+            height={200}
             className="rounded-md"
             placeholder="blur"
+            objectFit="cover"
           />
         </div>
         <Stack pt="6" spacing="3">
@@ -55,7 +55,7 @@ const PortfolioCard = ({
       <Divider />
       <CardFooter>
         <ButtonGroup spacing="2">
-          <Link href={link.href} aria-label={link.aria}>
+          <Link href={link.href} aria-label={link.aria} target="_blank">
             <Button variant="link" colorScheme="blue">
               {link.label}
             </Button>

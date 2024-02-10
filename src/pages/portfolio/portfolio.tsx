@@ -53,7 +53,7 @@ const Portfolio = () => {
         Calculator.
       </div>
 
-      <div className="flex justify-between">{cards}</div>
+      <div className="flex justify-between flex-col sm:flex-row">{cards}</div>
     </Page>
   );
 };
