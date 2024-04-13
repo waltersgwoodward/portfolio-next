@@ -10,8 +10,8 @@ const About = () => {
     >
       <div className="max-w-[900px]">
         <div className="p-[10px] text-md">
-          Hi there! My name is Walter Woodward this is a simply portfolio
-          website I built earlier this year.
+          Hi there! My name is Walter Woodward and this is a simple portfolio
+          website that I built earlier this year.
         </div>
         <div className="p-[10px] text-md">
           I am a Full Stack Software Developer currently based out of Oregon
