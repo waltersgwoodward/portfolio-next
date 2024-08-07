@@ -1,7 +1,5 @@
 # Walter S. Woodward's Portfolio Website
 
-#### If you would like to jump straight to the live deployment [click here](https://www.walterwoodward.dev).
-
 ## Getting Started
 
 First, run the development server:
