@@ -1,8 +1,13 @@
 # Walter S. Woodward's Portfolio Website
 
 ## Getting Started
+Install packages locally:
 
-First, run the development server:
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
