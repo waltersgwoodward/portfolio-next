@@ -50,13 +50,13 @@ export default function Nav() {
             >
               About
             </MenuItem>
-            {/* <MenuItem
+            <MenuItem
               icon={<FontAwesomeIcon icon={faBriefcase} />}
               as="a"
               href="/portfolio"
             >
               Portfolio
-            </MenuItem> */}
+            </MenuItem>
             <MenuItem
               icon={<FontAwesomeIcon icon={faEnvelope} />}
               as="a"
@@ -97,7 +97,7 @@ export default function Nav() {
               />
             </Button>
           </Link>
-          {/* <Link
+          <Link
             className="page-row__link"
             href="/portfolio"
             aria-label="Click here to view Walter's current projects"
@@ -110,7 +110,7 @@ export default function Nav() {
                 aria-label="portfolio"
               />
             </Button>
-          </Link> */}
+          </Link>
           <Link
             className="page-row__link"
             href="/contact"

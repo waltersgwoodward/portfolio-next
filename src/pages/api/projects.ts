@@ -1,7 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { StaticImageData } from 'next/image';
 import WalkInPetsLogo from "./walkin-pets-logo.png";
-import SamWilliams from "./sam-williams.jpeg";
 
 export type ProjectData = {
     image: {
@@ -32,17 +31,6 @@ export default function handler(
                 href: "https://www.handicappedpets.com/wheelchair-sizer/",
                 label: "Try the SureFit Calculator!",
                 aria: "Click here to view the deployed version of the Surefit Calculator",
-            },
-        },
-        {
-            image: { alt: "Sam Williams Photo", data: SamWilliams },
-            heading: "Nine Acre Photography Website",
-            description:
-                "A website I am currently building for a friend of mine, Sam Williams, founder of Nine Acre Corner Photography.",
-            link: {
-                href: "https://nineacrephotography.vercel.app/",
-                label: "Checkout Nine Acre Photography!",
-                aria: "Click here to view the deployed version of (what will be) nineacrephotography.com",
             },
         },
     ];

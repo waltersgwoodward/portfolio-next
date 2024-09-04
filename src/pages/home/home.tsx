@@ -23,7 +23,7 @@ const Home = () => {
             <Button backgroundColor={"transparent"}>ABOUT</Button>
           </Link>
         </div>
-        {/* <div className="p-[10px] text-center text-sm">
+        <div className="p-[10px] text-center text-sm">
           <Link
             className="page-row__link"
             href="/portfolio"
@@ -31,7 +31,7 @@ const Home = () => {
           >
             <Button backgroundColor={"transparent"}>PORTFOLIO</Button>
           </Link>
-        </div> */}
+        </div>
         <div className="p-[10px] text-center text-sm">
           <Link
             className="page-row__link"
